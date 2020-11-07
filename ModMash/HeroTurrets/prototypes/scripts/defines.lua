@@ -14,13 +14,13 @@ heroturrets.defines.names.force_neutral = "neutral"
 local test = false
 
 heroturrets.defines.turret_initial_one_kills_value = 50
-heroturrets.defines.turret_initial_one_damage_value = 750
+heroturrets.defines.turret_initial_one_damage_value = 10000
 heroturrets.defines.turret_initial_two_kills_value = 250
-heroturrets.defines.turret_initial_two_damage_value = 3750
+heroturrets.defines.turret_initial_two_damage_value = 50000
 heroturrets.defines.turret_initial_three_kills_value = 500
-heroturrets.defines.turret_initial_three_damage_value = 7500
+heroturrets.defines.turret_initial_three_damage_value = 100000
 heroturrets.defines.turret_initial_four_kills_value = 5000
-heroturrets.defines.turret_initial_four_damage_value = 75000
+heroturrets.defines.turret_initial_four_damage_value = 1000000
 if test then
 	heroturrets.defines.turret_initial_one_kills_value = 2
 	heroturrets.defines.turret_initial_one_damage_value = 10
