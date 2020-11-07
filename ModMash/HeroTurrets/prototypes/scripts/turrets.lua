@@ -78,6 +78,7 @@ local local_turret_added = function(entity,event)
 		entity.kills = math.max(heroturrets.defines.turret_levelup_two, entity.kills)
 	elseif starts_with(entity.name,"hero-turret-1") == true then
 		entity.kills = math.max(heroturrets.defines.turret_levelup_one, entity.kills)
+		entity.damage_dealt = 1000
 	end
 	end
 
@@ -146,7 +147,7 @@ local local_turret_removed = function(entity,event)
 					local_replace_turret(event.cause,ug[1])
 				end
 			end
-		elseif event.cause.kills >= heroturrets.defines.turret_levelup_one then
+		elseif event.cause.kills >= heroturrets.defines.turret_levelup_one or event.cause.damage_dealt >= 1000 then
 			if starts_with(event.cause.name,"hero-turret") then
 				--nothing to do
 			else
